@@ -92,7 +92,7 @@ const getYyPTPAPR = async () => {
     const totalPTPEarnedPerYear = poolUserInfo.reduce((a, b) => a + b.basePTPEarnedPerYear + b.boostedPTPEarnedPerYear, 0);
     console.log(`Total PTP earned per year = ${totalPTPEarnedPerYear} PTP`);
     //
-    // 10% of the PTP earned goes to yyPTP stakers.
+    // 15% of the PTP earned goes to yyPTP stakers.
     //
     const ptpEarnedForYyPtpStakersPerYear = PERCENTAGE_REWARDS_TO_YYPTP * totalPTPEarnedPerYear;
     console.log(`PTP rewards to yyPTP stakers per year = ${ptpEarnedForYyPtpStakersPerYear} PTP`);
